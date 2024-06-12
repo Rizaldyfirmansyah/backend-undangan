@@ -15,6 +15,7 @@ COPY . /var/www
 WORKDIR /var/www
 
 RUN chmod 777 -R /var/www/cache
+RUN chown -R www-data:www-data /var/www/html/logs
 RUN composer install --prefer-dist --no-dev --optimize-autoloader --no-interaction
 
 RUN php saya key

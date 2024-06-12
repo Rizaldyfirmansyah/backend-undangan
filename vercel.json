@@ -1,11 +1,6 @@
 {
     
-        "builds": [
-          {
-            "src": "Dockerfile",
-            "use": "@vercel/docker"
-          }
-        ],
+        
     
     "functions": {
         "api/*.php": {
